@@ -10,12 +10,20 @@
 </head>
 <body>
     <div id="topper">
-       <small><a href="#" style="text-decoration: none;color: black;"><i class="fa fa-envelope" style="font-size:15px;color:#2CB67D;padding-right: 10px;"></i>support@cybersquarelimited.com</a></small>
-       <small><i class="fa fa-phone" style="font-size:15px;color:#2E8B57;padding-right: 10px;"></i>+234234567890</small>
+        <small>
+            <a href="mailto:support@cybersquarelimited.com" style="text-decoration: none; color: black;">
+              <i class="fa fa-envelope" style="font-size:15px; color:#2CB67D; padding-right: 10px;"></i>support@cybersquarelimited.com
+            </a>
+          </small>
+           <small><i class="fa fa-phone" style="font-size:15px;color:#2E8B57;padding-right: 10px;"></i>+234234567890</small>
     </div>
     <div id="topper2">
-        <small><a href="#" style="text-decoration: none;color: black;"><i class="fa fa-envelope" style="font-size:15px;color:#2CB67D;padding-right: 10px;"></i>support@cybersquarelimited.com</a></small>
-        <small><i class="fa fa-phone" style="font-size:15px;color:#2E8B57;padding-right: 10px;"></i>+234234567890</small>
+        <small>
+            <a href="mailto:support@cybersquarelimited.com" style="text-decoration: none; color: black;">
+              <i class="fa fa-envelope" style="font-size:15px; color:#2CB67D; padding-right: 10px;"></i>support@cybersquarelimited.com
+            </a>
+          </small>
+          <small><i class="fa fa-phone" style="font-size:15px;color:#2E8B57;padding-right: 10px;"></i>+234234567890</small>
      </div>
     <header>
         <div>
@@ -177,28 +185,43 @@
     ">Contact Us Today To Speak With An <br>
         Expert About Your Specific Needs</p>
 <div style="display: flex;align-items: center;justify-content: center;">
-<form action="" style="text-align: center;">
-    <div>
-        <label for="">Name</label><br>
-        <input type="text" name="" id="">
-    </div>
-    <div>
-        <label for="">Email</label><br>
-        <input type="email" name="" id="">
-    </div>
-    <div>
-        <label for="">Phone</label><br>
-        <input type="tel">
-    </div>
-    <div>
-        <label for="">Company</label><br>
-        <input type="text" name="" id="">
-    </div>
-    <div>
+    <form action="javascript:void(0)" style="text-align: center;" id="consultationForm">
+        <div>
+            <label for="name">Name</label><br>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="phone">Phone</label><br>
+            <input type="tel" name="phone" id="phone" required>
+        </div>
+        <div>
+            <label for="company">Company</label><br>
+            <input type="text" name="company" id="company" required>
+        </div>
+        <input type="submit" value="Consultation" onclick="sendEmail()" id="submit">
+    </form>
+    
+    <script>
+    function sendEmail() {
+        // Get form values
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const company = document.getElementById("company").value;
+    
+        // Construct the mailto link with the form data in the body
+        const subject = encodeURIComponent("Consultation Request");
+        const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nCompany: ${company}`);
         
-    </div>
-    <input type="submit" name="" id="submit" value="Consultation">
-</form>    
+        // Open the mail client
+        window.location.href = `mailto:support@cybersquarelimited.com?subject=${subject}&body=${body}`;
+    }
+    </script>
+       
 </div>
 
 </div>

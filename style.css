@@ -66,6 +66,9 @@ section h1{
 .about>div{
     width: 40%;
 }
+.sd{
+    padding: 20px;padding-left: 40px
+}
 .about h2{
     font-size: 30px;
 }
@@ -180,11 +183,18 @@ div{
     list-style-type: none;
 }
 @media only screen and (max-width: 800px) {
+    section{
+        background-image: url(images/bg.jpg);height: 400px;background-position: center;
+        position: relative;height: 100%;
+    }
+    .sd{
+        padding: 20px;
+    }
     footer{
         flex-direction: column;
     }
     footer>div{
-        width: auto;
+        width: auto;margin: 0;
     }
     .boxes{
         flex-direction: column;
@@ -196,15 +206,15 @@ div{
         display: flex;flex-direction: row;justify-content: center;align-items: center;margin:0;
     }
     #boxes2 img{
-        width: 40px;
+        width: 20px;
     }
     #boxes2>div{
         background-color: #2E8B57;padding: 20px;border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;
         box-shadow: 1px 1px 3px 1px;
     border-width: 1px;
         border-style: solid;
-        font-size: small;
-        border-color: #25CBD3;margin: 10px;
+        font-size: 13px;
+        border-color: #25CBD3;margin: 10px;height: 100px;
     }
     #first{
         display: none;
@@ -225,7 +235,7 @@ div{
         border-bottom: 1px solid rgb(231, 227, 227);
         padding: 10px;display: block;
     }#topper2>small{
-        margin-left: 10px;
+        margin: 10px;
     }
     .sidenav{
         display: block;

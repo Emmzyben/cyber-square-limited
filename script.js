@@ -135,3 +135,8 @@ document.querySelectorAll("#mySidenav a").forEach(function(link) {
         open = false;
     });
 });
+
+function toggleFAQ(id) {
+  var div = document.getElementById('div' + id);
+  div.classList.toggle('show');
+}

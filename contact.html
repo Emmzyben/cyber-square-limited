@@ -1,0 +1,164 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/Group 4.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/f0fb58e769.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="topper">
+        <small>
+            <a href="mailto:support@cybersquarelimited.com" style="text-decoration: none; color: black;">
+              <i class="fa fa-envelope" style="font-size:15px; color:#2CB67D; padding-right: 10px;"></i>support@cybersquarelimited.com
+            </a>
+          </small>
+           <small><i class="fa fa-phone" style="font-size:15px;color:#2E8B57;padding-right: 10px;"></i>+234234567890</small>
+    </div>
+    <div id="topper2">
+        <small>
+            <a href="mailto:support@cybersquarelimited.com" style="text-decoration: none; color: black;">
+              <i class="fa fa-envelope" style="font-size:15px; color:#2CB67D; padding-right: 10px;"></i>support@cybersquarelimited.com
+            </a>
+          </small><br>
+          <small><i class="fa fa-phone" style="font-size:15px;color:#2E8B57;padding-right: 10px;"></i>+234234567890</small>
+     </div>
+    <header>
+        <div>
+<img src="images/logo.svg" alt="" id="img">
+        </div>
+        <div id="snddiv">
+ <ul style="font-weight: 600;">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="contact.html" id="contact">Contact Us</a></li>
+ </ul>
+        </div>
+    </header>
+    <div id="side">
+        <div onclick="openNav()">
+         <div class="container" onclick="myFunction(this)" id="sideNav">
+             <div class="bar1"></div>
+             <div class="bar2"></div>
+             <div class="bar3"></div>
+           </div>
+         </div>
+       </div>
+
+       <div id="mySidenav" class="sidenav">
+        <div style="text-align: center;margin-bottom: 40px;border-bottom: 2px solid #2E8B57;">
+          <img src="images/logo.svg" alt="">   
+          <p><b>Cyber Square</b></p>
+        </div>
+       
+        <a  href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+           <a  href="services.html">Services</a>
+           <a href="faq.html">FAQ</a>
+           <a  href="contact.html">Contact Us</a>
+         </div>
+       
+       
+      </div>
+  
+<section id="target">
+    <div>
+        <img src="images/logo.svg" alt="" width="30px">
+        <p style="color: #2E8B57;">World Class Cyber Security</p>
+        <h1>Contact Us</h1>
+<p>Contact Us Today To Speak With An Expert<br>
+    We are always available to serve you</p>  <br>
+</div>
+</section>
+   
+
+
+
+    <div class="contact" id="targetDiv3">
+        <div id="inside">
+            <p style="color: #2E8B57;font-weight: bold;">Get in Touch</p>
+            <p style="font-size: 25px;
+            font-weight: 900;color: #11191FCC;
+            ">Contact Us Today To Speak With An <br>
+                Expert About Your Specific Needs</p>
+        <div style="display: flex;align-items: center;justify-content: center;">
+            <form action="javascript:void(0)" style="text-align: center;" id="consultationForm">
+                <div>
+                    <label for="name">Name</label><br>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="phone">Phone</label><br>
+                    <input type="tel" name="phone" id="phone" required>
+                </div>
+                <div>
+                    <label for="company">Company</label><br>
+                    <input type="text" name="company" id="company" required>
+                </div>
+                <input type="submit" value="Consultation" onclick="sendEmail()" id="submit">
+            </form>
+            
+            <script>
+            function sendEmail() {
+                // Get form values
+                const name = document.getElementById("name").value;
+                const email = document.getElementById("email").value;
+                const phone = document.getElementById("phone").value;
+                const company = document.getElementById("company").value;
+            
+                // Construct the mailto link with the form data in the body
+                const subject = encodeURIComponent("Consultation Request");
+                const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nCompany: ${company}`);
+                
+                // Open the mail client
+                window.location.href = `mailto:support@cybersquarelimited.com?subject=${subject}&body=${body}`;
+            }
+            </script>
+               
+        </div>
+        
+        </div>
+        </div>
+        
+    <footer>
+        <div>
+    <div style="display: flex;flex-direction: row;">
+            <img src="images/logo.svg" alt="" width="50px" height="60px">
+            <p style="margin-left: 10px;"><b>Cyber square</b></p>
+        </div>
+        <p>Empowering businesses with secure, innovative IT solutions. Your trusted partner in cybersecurity, data protection, and digital transformation.
+            Need one? connect with us today.</p>
+    </div>
+    
+        
+    
+        <div >
+       <h3>Contact Us</h3>
+       <p> <i class="fa fa-map-marker" style=" font-size:20px;color:#ffffff;padding-right: 10px"></i>Mailing Address: Port Harcourt, Rivers State, Nigeria
+        <p><i class="fa fa-phone" style="font-size:15px;color:#ffffff;padding-right: 10px;"></i>Tel: +234 2345 6789 0</p>
+       <p><i class="fa fa-envelope" style="font-size:15px;color:#ffffff;padding-right: 10px;"></i> Email: support@cybersquarelimited.com</p>
+        </div>
+       
+    </footer>
+    <div style="text-align: center;background-color: #024B22;padding: 10px;color: #fff;border-top: 1px solid #fff;">
+        <p>Copyright 2024 Cyber square</p>
+        <div style="display: flex;flex-direction: row;justify-content: center;">
+          <a href="#" target="_blank" style="margin: 10px;"><i class="fa fa-facebook-official" style="font-size:24px;color:#ffffff"></i> </a>
+          <a  href="#" style="margin: 10px;"><i class="fa-brands fa-x-twitter" style="font-size:24px;color:#ffffff"></i></a>
+          <a class="ml-3 text-gray-500" href="#" target="_blank" style="margin: 10px;"><i class="fa fa-instagram" style="font-size:24px;color:#ffffff"></i></a>
+      <a class="ml-3 text-gray-500" href="#" style="margin: 10px;"><i class="fa-brands fa-whatsapp" style="font-size:24px;color:#ffffff"></i></a>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </body>
+
+    </html> 
+    

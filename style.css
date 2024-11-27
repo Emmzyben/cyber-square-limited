@@ -43,11 +43,11 @@ header>div>ul li>a:hover{
     background-color: #F9FAFB;padding: 10px;border-radius: 5px;text-decoration: none;color: black;
 }
 section>div{
-    text-align: center;background-color: #2e8b5631; color: #F9FAFB;position: absolute;
+    text-align: center;background-color: #00000071; color: #F9FAFB;position: absolute;
     top: 0;bottom: 0;left: 0;right: 0;padding: 40px;
 }
 section{
-    background-image: url(images/bg.jpg);height: 400px;background-position: center;
+    background-image: url(images/bg1.jpg);height: 400px;background-position: center;
     position: relative;height: 440px;
 }
 section h1{
@@ -228,7 +228,7 @@ div{
     display: flex;flex-direction: row;justify-content:center;align-items: center;flex-wrap: wrap;
   }
   .pics>div{
-    width: 400px;background-color: #024B22;height: 400px;margin: 20px;
+    width: 400px;height: 400px;margin: 20px;
   }
 .pics img{
     width: 100%;height: 100%;
